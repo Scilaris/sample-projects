@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>todo app</title>
+</head>
+<body>
+  <form class="todo" id="todo">
+    <div class="todo__item">
+        <label class="todo__label">Add new task</label>
+        <input type="text" class="todo__input" id="todo-input">
+        <button type="submit" class="todo__button button button_default" id="add-todo">+ new task</button>
+    </div>
+
+    <div class="todo__item">
+        <label class="todo__label">To-Do list:</label>
+        <label class="todo__label todo__label_filter">Filter</label>
+        <input type="text" class="todo__input" id="filter">
+        <ul class="todo__list">
+        </ul>
+        <button type="button" class="todo__button button button_dark" id="clear-all">Clear all</button>
+    </div>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>

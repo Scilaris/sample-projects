@@ -1,0 +1,85 @@
+body {
+  background-color: #66cc99;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #112233;
+}
+
+h1 {
+  font-weight: 400;
+  color: #112233;
+  font-size:  32px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom:  20px;
+  letter-spacing: 0.5px;
+}
+
+#annuity-form {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding:  20px;
+  border-radius: 20px;
+}
+
+input,
+label {
+  display: block;
+  margin: 10px auto 0;
+  max-width: 350px;
+  text-align: center;
+  color: #112233;
+}
+
+input {
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #112233;
+  padding: 0 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+input:focus {
+  border: 1px solid #66cc99;
+  text-align: left;
+}
+
+#calculate {
+  display: block;
+  margin: 30px auto 20px;
+  background-color: #66cc99;
+  border: 1px solid #185e3b;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  /* height: 30px; */
+  padding: 10px 10px;
+  width: 180px;
+  cursor: pointer;
+  /* box-shadow: inset 1px 1px 1px #000; */
+}
+
+#calculate:active {
+  box-shadow: inset 1px 1px 1px #000;
+}
+
+.results-container {
+  text-align: center;
+  margin-top:  10px;
+  color: #fff;
+  display: none;
+}
+
+.loader {
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
+
+.error {
+  color: tomato;
+  text-align: center;
+}

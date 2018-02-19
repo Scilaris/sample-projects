@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Annuity calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="annuity-form">
+    <h1>Калькулятор аннуитетных платежей по кредиту</h1>
+
+
+    <label for="amount">Сумма кредита</label>
+    <input type="number" id="amount">
+
+    <label for="percentage">Месячная процентная ставка по кредиту</label>
+    <input type="number" id="percentage">
+
+    <label for="years">Количество лет</label>
+    <input type="number" id="years">
+
+    <button type="submit" id="calculate">Рассчитать</button>
+
+    <img src="loading.gif" alt="" class="loader">
+
+    <div class="results-container">
+
+        <label for="amount">Платить в месяц</label>
+        <input type="number" id="monthlyPay" disabled>
+
+        <label for="totalSum">Общая сумма</label>
+        <input type="number" id="totalSum" disabled>
+
+        <label for="overPay">Переплата</label>
+        <input type="number" id="overPay" disabled>
+      </div>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>

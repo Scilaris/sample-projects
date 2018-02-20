@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: '';
+  background-image: url(https://images.unsplash.com/photo-1457523054379-8d03ab9fc2aa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8771f6d4bd8b5ac37feb9e824efd7109&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+.drum {
+  background: none;
+  border: 2px solid currentColor;
+  color: yellowgreen;
+  display: inline-block;
+  height: 120px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  max-width: 100px;
+  transition: all 0.05s;
+  width: 100%;
+}
+
+.drum__key {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.drum__effect {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.drum.playing {
+  border-color: yellow;
+  transform: scale(1.2);
+}

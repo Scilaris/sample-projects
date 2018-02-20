@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drum-kit</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <button data-key="65" class="drum">
+    <span class="drum__key">A</span>
+    <span class="drum__effect">Clap</span>
+  </button>
+
+  <button data-key="83" class="drum">
+    <span class="drum__key">S</span>
+    <span class="drum__effect">Hi-hat</span>
+  </button>
+
+  <button data-key="68" class="drum">
+    <span class="drum__key">D</span>
+    <span class="drum__effect">Kick</span>
+  </button>
+
+  <button data-key="70" class="drum">
+    <span class="drum__key">F</span>
+    <span class="drum__effect">Open hat</span>
+  </button>
+
+  <button data-key="71" class="drum">
+    <span class="drum__key">G</span>
+    <span class="drum__effect">Ride</span>
+  </button>
+
+  <button data-key="72" class="drum">
+    <span class="drum__key">H</span>
+    <span class="drum__effect">Snare</span>
+  </button>
+
+  <button data-key="74" class="drum">
+    <span class="drum__key">J</span>
+    <span class="drum__effect">Tink</span>
+  </button>
+
+  <button data-key="75" class="drum">
+    <span class="drum__key">K</span>
+    <span class="drum__effect">Tom</span>
+  </button>
+
+  <button data-key="76" class="drum">
+    <span class="drum__key">L</span>
+    <span class="drum__effect">Boom</span>
+  </button>
+
+  <audio data-key="76" src="./sounds/boom.wav"></audio>
+  <audio data-key="65" src="./sounds/clap.wav"></audio>
+  <audio data-key="83" src="./sounds/hihat.wav"></audio>
+  <audio data-key="68" src="./sounds/kick.wav"></audio>
+  <audio data-key="70" src="./sounds/openhat.wav"></audio>
+  <audio data-key="71" src="./sounds/ride.wav"></audio>
+  <audio data-key="72" src="./sounds/snare.wav"></audio>
+  <audio data-key="74" src="./sounds/tink.wav"></audio>
+  <audio data-key="75" src="./sounds/tom.wav"></audio>
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

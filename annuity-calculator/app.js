@@ -24,80 +24,79 @@ const loader = document.querySelector('.loader');
 annuityForm.addEventListener('submit', calculateAnnuity);
 
 function calculateAnnuity(e) {
+  loader.style.display = 'block';
+  resultsContainer.style.display = 'none';
 
-    loader.style.display = 'block';
-    resultsContainer.style.display = 'none';
+  if (isFinite(getTotalPayment())) {
+    setTimeout(() => {
+      loader.style.display = 'none';
+      showResults();
+      createResult();
+    }, 2000);
+  } else {
+    setTimeout(() => {
+      loader.style.display = 'none';
+      showError();
+    }, 1000);
+  }
 
-    if (isFinite(getTotalPayment())) {
-        setTimeout(() => {
-            loader.style.display = 'none';
-            showResults();
-            createResult();
-        }, 2000);
-    } else {
-        setTimeout(() => {
-            loader.style.display = 'none';
-            showError();
-        }, 1000);
-    }
+  console.log(getMonthlyAnnuity());
 
-    console.log(getMonthlyAnnuity());
-
-    e.preventDefault();
+  e.preventDefault();
 }
 
 function parseAmount() {
-    return parseFloat(amountInput.value);
+  return parseFloat(amountInput.value);
 }
 
 function parsePercentage() {
-    return parseFloat(percentageInput.value) / 100 / 12;
+  return parseFloat(percentageInput.value) / 100 / 12;
 }
 
 function parsePeriod() {
-    return parseFloat(yearInput.value) * 12;
+  return parseFloat(yearInput.value) * 12;
 }
 
 function findRate() {
-    const i = parsePercentage();
-    const n = parsePeriod();
+  const i = parsePercentage();
+  const n = parsePeriod();
 
-    return i * Math.pow(1 + i, n) / (Math.pow(1 + i, n) - 1);
+  return i * Math.pow(1 + i, n) / (Math.pow(1 + i, n) - 1);
 }
 
 function getMonthlyAnnuity() {
-    return findRate() * parseAmount();
+  return (findRate() * parseAmount()).toFixed(2);
 }
 
 function getTotalPayment() {
-    return getMonthlyAnnuity() * parsePeriod();
+  return (getMonthlyAnnuity() * parsePeriod()).toFixed(2);
 }
 
 function getOverPayment() {
-    return getTotalPayment() - parseAmount();
+  return (getTotalPayment() - parseAmount()).toFixed(2);
 }
 
 function createResult() {
-    const monthlyPay = document.getElementById('monthlyPay');
-    const totalSum = document.getElementById('totalSum');
-    const overPay = document.getElementById('overPay');
+  const monthlyPay = document.getElementById('monthlyPay');
+  const totalSum = document.getElementById('totalSum');
+  const overPay = document.getElementById('overPay');
 
-    monthlyPay.value = getMonthlyAnnuity();
-    overPay.value = getTotalPayment();
-    totalSum.value = getOverPayment();
+  monthlyPay.value = getMonthlyAnnuity();
+  totalSum.value = getTotalPayment();
+  overPay.value = getOverPayment();
 }
 
 function showResults() {
-    resultsContainer.style.display = 'block';
+  resultsContainer.style.display = 'block';
 }
 
 function showError() {
-    const errorEl = document.createElement('div');
-    errorEl.className = 'error';
-    errorEl.textContent = 'Пожалуйста, введите значения'
-    annuityForm.insertBefore(errorEl, document.getElementById('loader'));
+  const errorEl = document.createElement('div');
+  errorEl.className = 'error';
+  errorEl.textContent = 'Пожалуйста, введите значения';
+  annuityForm.insertBefore(errorEl, document.getElementById('loader'));
 
-    setTimeout(() => {
-        errorEl.remove();
-    }, 2000);
+  setTimeout(() => {
+    errorEl.remove();
+  }, 2000);
 }

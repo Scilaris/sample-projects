@@ -7,3 +7,4 @@ Mini-projects. Just for fun!
 3. Drum kit: https://scilaris.github.io/sample-projects/drum-kit/index.html
 4. Organizer: https://scilaris.github.io/sample-projects/organizer/index.html
 5. ToDo: https://scilaris.github.io/sample-projects/to-do/index.html
+6. Clock

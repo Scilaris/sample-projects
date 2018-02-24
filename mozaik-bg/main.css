@@ -1,0 +1,107 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.rooms-wrapper {
+  display: flex;
+  width:  100%;
+}
+
+.rooms-module {
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  max-height: 300px;
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.rooms-module:first-child .rooms-module__inner {
+  background-image: url('./img/bg_1.jpg');
+}
+
+.rooms-module .rooms-module__inner {
+  background-image: url('./img/bg_2.jpg');
+}
+
+.rooms-module:last-child .rooms-module__inner {
+  background-image: url('./img/bg_3.jpg');
+}
+
+.rooms-module:first-child::after {
+  background-image: url('./img/kitchen_mebel.png');
+}
+
+.rooms-module::after {
+  background-image: url('./img/living_room_mebel.png');
+}
+
+.rooms-module:last-child::after {
+  background-image: url('./img/bath_mebel.png');
+}
+
+.rooms-module::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  pointer-events: none;
+}
+
+
+.rooms-module svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  fill: #fff;
+}
+
+.rooms-module.ready {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rooms-module__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.rooms-module__inner:hover .rooms-block {
+  opacity: 0;
+}
+
+.rooms-module::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+.rooms-block {
+  will-change: opacity;
+  background-color: #e8e9e8;
+  width: calc(100%/10);
+  height: calc(100%/10);
+  display: inline-block;
+  -webkit-transition: opacity 50ms;
+  transition: opacity 50ms;
+}

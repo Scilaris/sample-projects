@@ -9,4 +9,5 @@ Mini-projects. Just for fun!
 5. Drum kit: https://scilaris.github.io/sample-projects/drum-kit/index.html
 6. Mozaik Background https://scilaris.github.io/sample-projects/mozaik-bg/index.html
 7. Organizer: https://scilaris.github.io/sample-projects/organizer/index.html
-8. ToDo: https://scilaris.github.io/sample-projects/to-do/index.html
+8. Preloader: https://scilaris.github.io/sample-projects/preloader/index.html
+9. ToDo: https://scilaris.github.io/sample-projects/to-do/index.html

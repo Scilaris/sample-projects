@@ -13,8 +13,9 @@ function preloader(selector, { images = true, scripts = false } = {}) {
     sourceArray.push(...document.scripts);
   }
 
-  function sourcesLoaded() {
+  function sourcesLoaded(e) {
     loadsCompleted++;
+    console.log(e);
     percentage = Math.floor((100 / sourceArray.length) * loadsCompleted);
     if (percentage >= 100) percentage = 100;
     preloader.textContent = percentage + '%';
@@ -26,8 +27,15 @@ function preloader(selector, { images = true, scripts = false } = {}) {
   }
 
   sourceArray.forEach(src => {
-    src.onload = sourcesLoaded;
-    src.onerror = sourcesLoaded;
+    if (src.nodeName === 'IMG') {
+      const clone = new Image();
+      clone.onload = sourcesLoaded;
+      clone.onerror = sourcesLoaded;
+      clone.src = src.src
+    } else {
+      src.onload = sourcesLoaded;
+      src.onerror = sourcesLoaded;
+    }
   });
 }
 

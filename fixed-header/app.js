@@ -1,12 +1,15 @@
-window.addEventListener('scroll', fixedNav);
+function stickyHeader(selector, bodyClass) {
+  const target = document.querySelector(selector);
+  const targetOffsetTop = target.offsetTop;
 
-function fixedNav() {
-    const nav = document.querySelector('.navigation');
-
-    if (window.scrollY > nav.offsetTop) {
-        document.body.classList.add('fixed-nav');
-        document.body.style.paddingTop = nav.offsetHeight;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > targetOffsetTop) {
+      document.body.classList.add('sticky-header');
+      document.body.style.paddingTop = target.offsetHeight;
     } else {
-        document.body.classList.remove('fixed-nav');        
+      document.body.classList.remove('sticky-header');
     }
+  });
 }
+
+stickyHeader('.navigation');

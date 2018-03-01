@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  background-color: tomato;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.target {
+  font-size: 50px;
+  color: white;
+}

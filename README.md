@@ -6,6 +6,7 @@
 1. [Bouncing balls:](https://scilaris.github.io/sample-projects/bouncing-balls/index.html)
 1. Clock: https://scilaris.github.io/sample-projects/js-clock/index.html
 1. Css-vars-js: https://scilaris.github.io/sample-projects/css-vars-js/index.html
+1. Drag & move https://scilaris.github.io/sample-projects/drag-and-move/index.html
 1. Drum kit: https://scilaris.github.io/sample-projects/drum-kit/index.html
 1. Element observer https://scilaris.github.io/sample-projects/element-observer/index.html
 1. Fixed header: https://scilaris.github.io/sample-projects/fixed-header/index.html

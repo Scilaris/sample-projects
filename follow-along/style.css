@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.57;
+  font-size: 20px;
+  background-color: #111;
+  color: whitesmoke;
+  padding: 20px;
+  font-family: sans-serif;
+  word-spacing: 5px;
+}
+
+p {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #50c878;
+  white-space: nowrap;
+}
+
+.highlight {
+  transition: 0.3s;
+  z-index: -1;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  padding: 0 5px;
+  display: block;
+  border-radius: 20px;
+}

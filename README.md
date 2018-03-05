@@ -1,9 +1,9 @@
-# sample-projects
+# Sample mini projects
 
-**Mini-projects.** _Just for fun!_
+_Just for fun!_
 
-1. [Annuity calculator:](https://scilaris.github.io/sample-projects/annuity-calculator/index.html)
-1. [Bouncing balls:](https://scilaris.github.io/sample-projects/bouncing-balls/index.html)
+1. Annuity calculator: https://scilaris.github.io/sample-projects/annuity-calculator/index.html
+1. Bouncing balls: https://scilaris.github.io/sample-projects/bouncing-balls/index.html
 1. Clock: https://scilaris.github.io/sample-projects/js-clock/index.html
 1. Css-vars-js: https://scilaris.github.io/sample-projects/css-vars-js/index.html
 1. Drag & move https://scilaris.github.io/sample-projects/drag-and-move/index.html
@@ -15,3 +15,4 @@
 1. Organizer: https://scilaris.github.io/sample-projects/organizer/index.html
 1. Preloader: https://scilaris.github.io/sample-projects/preloader/index.html
 1. ToDo: https://scilaris.github.io/sample-projects/to-do/index.html
+1. Slide In Scroll: https://scilaris.github.io/sample-projects/slide-in-scroll/index.html

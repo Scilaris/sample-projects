@@ -14,5 +14,6 @@ _Just for fun!_
 1. Mozaik Background https://scilaris.github.io/sample-projects/mozaik-bg/index.html
 1. Organizer: https://scilaris.github.io/sample-projects/organizer/index.html
 1. Preloader: https://scilaris.github.io/sample-projects/preloader/index.html
-1. ToDo: https://scilaris.github.io/sample-projects/to-do/index.html
 1. Slide In Scroll: https://scilaris.github.io/sample-projects/slide-in-scroll/index.html
+1. Speech Recognition: https://scilaris.github.io/sample-projects/speech-recognition/index.html
+1. ToDo: https://scilaris.github.io/sample-projects/to-do/index.html
